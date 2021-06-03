@@ -1,5 +1,5 @@
 from config import app
-from flask import requests, render_template, jsonify
+from flask import request, render_template, jsonify
 
 @app.route("/")
 def main_route():
@@ -7,4 +7,4 @@ def main_route():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True, host='0.0.0.0')
